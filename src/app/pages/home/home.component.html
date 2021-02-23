@@ -1,1 +1,9 @@
-asdfasfasfad
+<div class="tama-home">
+  <div class="tama-catalog">
+    <div class="tama-catalog__item" *ngFor="let wig of wigs">
+      <img src="../../../assets/wigs/{{wig.img}}" alt="">
+      name: {{wig.id}}
+      img: {{wig.img}}
+    </div>
+  </div>
+</div>

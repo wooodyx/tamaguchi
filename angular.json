@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "tama",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -21,14 +21,15 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.tama.json",
             "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/styles/_index.scss"
             ],
             "scripts": []
           },
@@ -97,7 +98,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
+              "tsconfig.tama.json",
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],

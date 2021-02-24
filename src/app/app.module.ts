@@ -9,14 +9,16 @@ import { AppComponent } from './app.component';
 import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaNavbarComponent } from './components/navbar/navbar.component';
 import { TamaWigDetailComponent } from './components/wig-detail/wig-detail.component';
-import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
+import { TamaPayMethodsComponent } from './pages/pay-methods/pay-methods.component';
 
 const COMPONENTS = [
   AppComponent,
   TamaHomeComponent,
   TamaNavbarComponent,
   TamaWigDetailComponent,  
-  ContactMeComponent
+  TamaContactMeComponent,
+  TamaPayMethodsComponent
 ]
 
 @NgModule({
@@ -30,7 +32,7 @@ const COMPONENTS = [
   ],
   providers: [],
   bootstrap: [
-    ...COMPONENTS
+    AppComponent
   ]
 })
 export class AppModule { }

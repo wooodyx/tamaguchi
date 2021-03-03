@@ -1,12 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { takeUntil } from 'rxjs/operators';
+import { WigModel } from '../../models/wigs.model';
+import { TamaComponentBaseClass } from '../../class/component-base.class';
+import { TamaWigService } from '../../services/wig.service';
 
 @Component({
   selector: 'tama-wig-detail',
   templateUrl: './wig-detail.component.html',
   styleUrls: ['./wig-detail.component.scss']
 })
-export class TamaWigDetailComponent implements OnInit {
-  constructor() { }
+export class TamaWigDetailComponent extends TamaComponentBaseClass {
+  public wigSelected: WigModel;
 
-  ngOnInit(): void { }
+  constructor(private wigService: TamaWigService) {
+    super();
+  }
+
+  init() {
+    this.getData();
+  }
+
+  private getData(): void {
+    this.wigService.getWigDetailAsObservable()
+      .pipe(takeUntil(this.$destroyed))
+      .subscribe((wig) => {
+        this.wigSelected = wig;
+      })
+  }
+
+  public close() {
+    this.wigService.wigDetail = null;
+  }
 }

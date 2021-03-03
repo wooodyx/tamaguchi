@@ -1,9 +1,20 @@
 <div class="tama-home">
+  <div class="tama-banner">
+  </div>
+
   <div class="tama-catalog">
-    <div class="tama-catalog__item" *ngFor="let wig of wigs">
-      <img src="../../../assets/wigs/{{wig.img}}" alt="">
-      name: {{wig.id}}
-      img: {{wig.img}}
-    </div>
+
+    <ng-container *ngFor="let wig of wigs | slice:0:3">
+      <tama-wig-element [wig]="wig"></tama-wig-element>
+    </ng-container>
+    
+
+
+  </div>
+
+  <div class="tama-network">
+  </div>
+
+  <div class="tama-happy-clients">
   </div>
 </div>

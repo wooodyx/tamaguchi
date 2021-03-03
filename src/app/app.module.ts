@@ -10,7 +10,9 @@ import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaNavbarComponent } from './components/navbar/navbar.component';
 import { TamaWigDetailComponent } from './components/wig-detail/wig-detail.component';
 import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
-import { TamaPayMethodsComponent } from './pages/pay-methods/pay-methods.component';
+import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
+import { TamaCatalogComponent } from './pages/catalog/catalog.component';
+import { TamaWigElementComponent } from './components/wig-element/wig-element.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -18,7 +20,9 @@ const COMPONENTS = [
   TamaNavbarComponent,
   TamaWigDetailComponent,  
   TamaContactMeComponent,
-  TamaPayMethodsComponent
+  TamaPaymentMethodsComponent,
+  TamaCatalogComponent,
+  TamaWigElementComponent
 ]
 
 @NgModule({
@@ -28,7 +32,7 @@ const COMPONENTS = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [

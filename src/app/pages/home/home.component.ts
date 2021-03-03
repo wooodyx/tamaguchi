@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { takeUntil } from 'rxjs/operators';
+import { Router } from '@angular/router';
+import { take, takeUntil } from 'rxjs/operators';
 import { WigModel } from 'src/app/models/wigs.model';
+import { TamaWigService } from 'src/app/services/wig.service';
 import { TamaComponentBaseClass } from '../../class/component-base.class';
-import { TamaWigService } from '../../services/wig.service';
 
 @Component({
   selector: 'tama-home',
@@ -12,20 +13,19 @@ import { TamaWigService } from '../../services/wig.service';
 export class TamaHomeComponent extends TamaComponentBaseClass {
   public wigs: WigModel;
 
-  constructor(private wigService: TamaWigService) {
+  constructor(
+    private router: Router,
+    private wigService: TamaWigService
+  ) {
     super();
-   }
 
-  init(): void {
-    this.getWigData();
   }
 
-  getWigData(): void {
-    this.wigService.getData()
+  init() {
+    this.wigService.getWigsDataAsObservable()
       .pipe(takeUntil(this.$destroyed))
       .subscribe((wigs) => {
         this.wigs = wigs;
-        console.log(wigs)
       })
   }
 }

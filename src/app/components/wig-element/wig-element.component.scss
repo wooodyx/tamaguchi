@@ -1,11 +1,28 @@
+.tama-wig-element {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 10px;
 
-.wig-element {
-    width: 300px;
-    height: 300px;    
-    cursor: pointer;
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 35px;
+  .tama-wig-element-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  .tama-title-1 {
+    margin: 10px;
+  }
+
+  &-body {
+    display: grid;
+    &-item {
+      font-family: "Odin-Rounded";
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+      }
     }
   }
+}

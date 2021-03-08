@@ -4,5 +4,6 @@ export interface WigModel {
   description: string,
   long: string,
   ears: string,
-  price: string
+  price: string,
+  encodeUri?: string;
 }

@@ -1,3 +1,28 @@
-<div class="wig-element" (click)="openDetail()" >
-  <img src="../../../assets/{{wig.img}}" alt="">
+<div class="tama-wig-element">
+  <img class="tama-wig-element-img" src="../../../assets/{{wig.img}}" alt="Wig" (click)="openDetail()">
+  <div class="tama-title-1">
+    {{ wig.id }}
+  </div>
+  <div class="tama-wig-element-body">
+    <div class="tama-wig-element-body-item">
+      <img src="../../../assets/images/icons/wig.png" alt="wig.id">
+      <span>{{ wig.description }}</span>
+    </div>
+    <div class="tama-wig-element-body-item">
+      <img src="../../../assets/images/icons/long.png" alt="wig.id">
+      <span>{{ wig.long }}</span>
+    </div>
+    <div class="tama-wig-element-body-item">
+      <img src="../../../assets/images/icons/ear.png" alt="wig.id">
+      <span> {{ wig.ears }}</span>
+    </div>
+    <div class="tama-wig-element-body-item">
+      <img src="../../../assets/images/icons/price.png" alt="wig.id">
+      <span> {{ wig.price }} </span>
+    </div>
+  </div>
+  <div class="tama-wig-element-footer">
+    <a target="__blank"
+      href="https://wa.me/+573057967478?text=Hola!! quisiera ver más sobre {{ wig.encodeUri }}">Whatsapp</a>
+  </div>
 </div>

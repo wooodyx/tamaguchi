@@ -1,31 +1,4 @@
 <div class="tama-wig-detail" *ngIf="wigSelected">
   <div class="tama-wig-detail-background" (click)="close()"></div>
-  <div class="tama-wig-detail-content">
-    <div class="tama-title-1">
-      {{ wigSelected.id }}
-    </div>
-    <div class="tama-wig-detail-body">
-      <div class="tama-wig-detail-body-info">
-        <div class="tama-wig-detail-body-info-item">
-          <img width="100px" src="../../../assets/images/icons/wig.png" alt="wigSelected.id">
-          <span>{{ wigSelected.description }}</span>
-        </div>
-        <div class="tama-wig-detail-body-info-item">
-          <img width="100px" src="../../../assets/images/icons/long.png" alt="wigSelected.id">
-          <span>{{ wigSelected.long }}</span>
-        </div>
-        <div class="tama-wig-detail-body-info-item">
-          <img width="100px" src="../../../assets/images/icons/ear.png" alt="wigSelected.id">
-          <span> {{ wigSelected.ears }}</span>
-        </div>
-        <div class="tama-wig-detail-body-info-item">
-          <img width="100px" src="../../../assets/images/icons/price.png" alt="wigSelected.id">
-          <span> {{ wigSelected.price }} </span>
-        </div>
-      </div>
-      <div class="tama-wig-detail-image">
-        <img width="300" src="../../../../assets/{{wigSelected.img}}" alt="wigSelected.id">
-      </div>
-    </div>
-  </div>
+  <img  class="tama-wig-detail-image" src="../../../../assets/{{wigSelected.img}}" alt="wigSelected.id">
 </div>

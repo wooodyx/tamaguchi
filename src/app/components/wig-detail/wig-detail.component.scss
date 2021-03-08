@@ -10,41 +10,16 @@
     height: 100%;
     opacity: 0.5;
   }
-  &-content {
+  &-image {
     border: 5px solid var(--tama-border);
     background: var(--tama-background-2);
-    width: 600px;
-    height: 500px;
-    max-height: 500px;
+    max-height: 90vh;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    padding: 20px;
-
-    &.tama-title-1 {
-      text-align: center;
-    }
   }
 
-  &-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    &-info {
-      &-item {
-        display: flex;
-        align-items: center;
-        img {
-          border-radius: 35px;
-        }
-      }
-    }
-    .tama-wig-detail-image {
-      padding: 20px;
-      img {
-        border-radius: 35px;
-      }
-    }
-  }
 }

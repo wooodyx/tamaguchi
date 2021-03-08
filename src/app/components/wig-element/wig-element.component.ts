@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { TamaWigService } from 'src/app/services/wig.service';
 import { TamaComponentBaseClass } from '../../class/component-base.class';
 import { WigModel } from '../../models/wigs.model';
@@ -8,11 +9,18 @@ import { WigModel } from '../../models/wigs.model';
   templateUrl: './wig-element.component.html',
   styleUrls: ['./wig-element.component.scss']
 })
-export class TamaWigElementComponent extends TamaComponentBaseClass {
+export class TamaWigElementComponent extends TamaComponentBaseClass implements OnChanges {
   @Input() wig: WigModel;
 
   constructor(private wigs: TamaWigService) {
     super();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.wig.currentValue) {
+      this.wig = changes.wig.currentValue;
+      this.wig.encodeUri =  encodeURI('https://images.rappi.com/web/ecommerce-partners/images/paga-con-rappi/buttons/btn-white-rectangle-alt-3.png');
+    }
   }
 
   openDetail() {

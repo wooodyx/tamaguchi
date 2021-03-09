@@ -1,18 +1,31 @@
 <div class="tama-home">
   <div class="tama-banner">
+    <video autoplay >
+      <source src="../../../assets/video/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="tama-tutorial tama-background">
+
+  </div>
+
+  <div class="tama-payment-methods">
+    <div class="tama-title-3">
+        Metodos de pago
+    </div>
+    <div class="tama-payment-methods-content">
+      <img width="300" src="../../../assets/images/payment-methods/icon-bancolombia.png" alt="bancolombia">
+      <img width="300" src="../../../assets/images/payment-methods/icon-nequi.png" alt="nequi">
+    </div>
+    <div class="tama-subtitle-3">
+      Una vez realizado el pago no olvides enviarnos el comprobante de pago.
+    </div>
   </div>
 
   <div class="tama-catalog">
-
-    <ng-container *ngFor="let wig of wigs | slice:0:3">
+    <ng-container *ngFor="let wig of wigs | slice:0:4">
       <tama-wig-element [wig]="wig"></tama-wig-element>
     </ng-container>
-    
-
-
-  </div>
-
-  <div class="tama-network">
   </div>
 
   <div class="tama-happy-clients">

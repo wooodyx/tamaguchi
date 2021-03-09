@@ -36,8 +36,20 @@
   font-size: 40px;
 }
 
-.tama-subtitle-1 {
+.tama-subtitle-1,
+.tama-subtitle-2,
+.tama-subtitle-3 {
   font-family: "Odin-Rounded";
+  font-size: 13px;
+  color: var(--tama-primary-color);
+}
+
+.tama-subtitle-2 {
+  font-size: 15px;
+}
+
+.tama-subtitle-3 {
+  font-size: 17px;
 }
 
 .tama-p-1 {

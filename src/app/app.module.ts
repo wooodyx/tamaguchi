@@ -6,37 +6,45 @@ import { AppRoutingModule } from './app-routing.module';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
-import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaNavbarComponent } from './components/navbar/navbar.component';
 import { TamaFooterComponent } from './components/footer/footer.component';
 import { TamaWigDetailComponent } from './components/wig-detail/wig-detail.component';
+import { TamaWigElementComponent } from './components/wig-element/wig-element.component';
+import { TamaWigCatalogComponent } from './components/wig-catalog/wig-catalog.component';
+
+// PAGES
+
+import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
 import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
 import { TamaCatalogComponent } from './pages/catalog/catalog.component';
-import { TamaWigElementComponent } from './components/wig-element/wig-element.component';
 
 const COMPONENTS = [
   AppComponent,
-  TamaHomeComponent,
   TamaNavbarComponent,
   TamaFooterComponent,
-  TamaWigDetailComponent,  
+  TamaWigDetailComponent,
+  TamaWigElementComponent,
+  TamaWigCatalogComponent
+];
+
+const PAGES = [
+  TamaHomeComponent,
   TamaContactMeComponent,
   TamaPaymentMethodsComponent,
   TamaCatalogComponent,
-  TamaWigElementComponent,
-]
+];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
+    ...PAGES
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
   bootstrap: [
     AppComponent
   ]

@@ -1,29 +1,29 @@
 @font-face {
-  font-family: '04B-30';
+  font-family: "04B-30";
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/04B-30.TTF") format("opentype");
 }
 
 @font-face {
-  font-family: 'Odin-Rounded';
+  font-family: "Odin-Rounded";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Odin-Rounded.otf") format("opentype");
 }
 
 .tama-font-1 {
-  font-family: '04B-30';
+  font-family: "04B-30";
 }
 
 .tama-font-2 {
-  font-family: 'Odin-Rounded';
+  font-family: "Odin-Rounded";
 }
 
 .tama-title-1,
 .tama-title-2,
 .tama-title-3 {
-  font-family: "04B-30";  
+  font-family: "04B-30";
   font-size: 20px;
   color: var(--tama-secundary-color);
 }
@@ -50,6 +50,13 @@
 
 .tama-subtitle-3 {
   font-size: 17px;
+}
+
+.tama-text {
+  font-family: "Odin-Rounded";
+  font-size: 17px;
+  color: var(--tama-text);
+  line-height: 1.5;
 }
 
 .tama-p-1 {

@@ -1,27 +1,30 @@
-.tama-wig-element {
-  width: 300px;
-  cursor: pointer;
-  border: 1px solid;
-  border-radius: 10px;
+:host {
+  width: 18%;
 
-  .tama-wig-element-img {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: 300px;
-  }
+  .tama-wig-element {
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
 
-  .tama-title-1 {
-    margin: 10px;
-  }
+    .tama-wig-element-img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 300px;
+    }
 
-  &-body {
-    display: grid;
-    &-item {
-      font-family: "Odin-Rounded";
-      display: flex;
-      align-items: center;
-      img {
-        width: 40px;
+    .tama-title-1 {
+      margin: 10px;
+    }
+
+    &-body {
+      display: grid;
+      &-item {
+        font-family: "Odin-Rounded";
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+        }
       }
     }
   }

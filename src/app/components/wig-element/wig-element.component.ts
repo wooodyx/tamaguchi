@@ -19,7 +19,8 @@ export class TamaWigElementComponent extends TamaComponentBaseClass implements O
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.wig.currentValue) {
       this.wig = changes.wig.currentValue;
-      this.wig.encodeUri =  encodeURI('https://images.rappi.com/web/ecommerce-partners/images/paga-con-rappi/buttons/btn-white-rectangle-alt-3.png');
+      // TODO: use when upgrade angular universal
+      // this.wig.encodeUri =  encodeURI('https://images.rappi.com/web/ecommerce-partners/images/paga-con-rappi/buttons/btn-white-rectangle-alt-3.png');
     }
   }
 

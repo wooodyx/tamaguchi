@@ -9,13 +9,13 @@ import { WigModel } from '../models/wigs.model';
 })
 export class TamaWigService {
 
-  public $wigs = new BehaviorSubject<WigModel>(null);
+  public $wigs = new BehaviorSubject<Array<WigModel>>(null);
 
-  set wigs(step: WigModel) {
-    this.$wigs.next(step);
+  set wigs(wig: Array<WigModel>) {
+    this.$wigs.next(wig);
   }
 
-  get wigs(): WigModel {
+  get wigs(): Array<WigModel> {
     return this.$wigs.value;
   }
 
@@ -31,7 +31,7 @@ export class TamaWigService {
 
   constructor(private http: HttpClient) { }
 
-  public getWigsDataAsObservable(): Observable<WigModel> {
+  public getWigsDataAsObservable(): Observable<Array<WigModel>> {
     return this.$wigs.asObservable();
   }
   
@@ -39,7 +39,7 @@ export class TamaWigService {
     return this.$wigDetail.asObservable();
   }
 
-  public getData(): Observable<WigModel> {
+  public getData(): Observable<Array<WigModel>> {
     return this.http.get('../assets/wig.json')
     .pipe(map((json: { wigs }) => json.wigs))
     .pipe(tap((wigs)=> {  

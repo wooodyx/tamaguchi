@@ -2,7 +2,7 @@
   <img src="../../../assets/tamaguchi-logo.png" alt="logo">
 
   <ng-container *ngFor="let item of route; index as i">
-    <div class="tama-navbar__item tama-font-1" [routerLink]="[item.path]" routerLinkActive="active">
+    <div class="tama-navbar-item tama-font-1" [routerLink]="[item.path]" routerLinkActive="active">
       {{item.title}}
     </div>
   </ng-container>

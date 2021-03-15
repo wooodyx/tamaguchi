@@ -1,8 +1,36 @@
 <div class="tama-home">
   <div class="tama-banner">
-    <video autoplay >
+    <video autoplay>
       <source src="../../../assets/video/banner.mp4" type="video/mp4">
     </video>
+  </div>
+
+  <div class="tama-welcome">
+    <div class="tama-welcome-content">
+      <div class="tama-title-2">
+        ¡Hola!
+      </div>
+  
+      <div class="tama-text">
+        Tamaguchi nace en el año 2016 cuando dos hermanas enamoradas de la cultura japonesa, inician en el hermoso mundo
+        del
+        cosplay, por ello, deciden crear esta maravillosa idea de no sólo alquilar las pelucas para aquellas personas que
+        desean traer a la vida a su personaje favorito, si no también ayudar con el mantenimiento de las mismas, ya que
+        seamos sinceros…Para un cosplayer o amante de las pelucas, estas son su más valioso tesoro y su más grande
+        inversión.
+        <br> <br>
+        Recuerda que estamos dispuestos a ayudarte para que tú cosplay soñado sea un éxito, ya sea por medio del alquiler
+        o
+        devolviéndole la vida a tus pelucas.
+        <br> <br>
+        No olvides revisar las novedades que te traemos del universo kawaii ✧◝(⁰▿⁰)◜✧
+      </div>
+
+      <div class="tama-title-1">
+        Gracias por visitar <br><br> Tamaguchi Store Colombia.
+      </div>
+  
+    </div>
   </div>
 
   <div class="tama-tutorial tama-background">
@@ -11,7 +39,7 @@
 
   <div class="tama-payment-methods">
     <div class="tama-title-3">
-        Metodos de pago
+      Metodos de pago
     </div>
     <div class="tama-payment-methods-content">
       <img width="300" src="../../../assets/images/payment-methods/icon-bancolombia.png" alt="bancolombia">
@@ -22,11 +50,7 @@
     </div>
   </div>
 
-  <div class="tama-catalog">
-    <ng-container *ngFor="let wig of wigs | slice:0:4">
-      <tama-wig-element [wig]="wig"></tama-wig-element>
-    </ng-container>
-  </div>
+  <tama-wig-catalog [carousel]="true"></tama-wig-catalog>
 
   <div class="tama-happy-clients">
   </div>

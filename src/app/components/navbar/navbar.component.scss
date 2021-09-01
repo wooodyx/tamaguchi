@@ -32,13 +32,22 @@
 
   img {
     position: absolute;
-    width: 310px;
+    width: 295px;
     margin-left: 5px;
     margin-top: 2px;
     cursor: pointer;
     z-index: 1;
-    top: -5px;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 992px) {
+  .tama-navbar {
+    img {
+      width: 270px;
+    }
+  }
+}
+

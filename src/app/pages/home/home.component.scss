@@ -1,3 +1,7 @@
+.tama-home{
+  overflow-x: hidden;
+}
+
 .tama-banner {
   text-align: center;
   video {
@@ -49,13 +53,24 @@
   }
 
   .tama-payment-methods {
+    margin-bottom: 150px;
     &-content {
       flex-wrap: wrap;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+      gap: 0;
+      img {
+        width: 200px;
+      }
     }
     .tama-subtitle-3{
-      width: 340px;
+      width: 240px;
       margin: auto;
+    }
+  }
+
+  .tama-divisor{
+    &:last-child {
+      display: none;
     }
   }
 }

@@ -1,18 +1,15 @@
 .tama-wig-catalog {
-  display: flex;
+  display: grid;
   gap: 40px;
   padding: 40px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  tama-wig-element {
-    width: 22%;
-  }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .carousel {
-  tama-wig-element {
-    width: 23%;
-  }
 }
 
+@media (max-width: 992px) {
+  .tama-wig-catalog {
+    grid-template-columns: 1fr;
+  }
+}

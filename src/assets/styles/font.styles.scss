@@ -62,3 +62,15 @@
 .tama-p-1 {
   font-family: "Odin-Rounded";
 }
+
+
+@media (max-width: 992px) {
+  .tama-title-3 {
+    font-size: 30px;
+  }
+
+  .tama-text {
+    font-size: 15px;
+    line-height: 1.3;
+}
+}

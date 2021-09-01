@@ -32,3 +32,17 @@
     gap: 30px;
   }
 }
+
+
+@media (max-width: 992px) {
+  .tama-payment-methods {
+    &-content {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .tama-subtitle-3{
+      width: 340px;
+      margin: auto;
+    }
+  }
+}

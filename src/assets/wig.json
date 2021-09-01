@@ -5,7 +5,7 @@
       "img": "images/wigs/tama-wig-001.JPG",
       "description": "Peluca Kanekalon con malla tipo encaje",
       "long": "150",
-      "ears": "Orejas removibles",
+      "mesh": "Orejas removibles",
       "price": "35000"
     },
     {
@@ -13,7 +13,7 @@
       "img": "images/wigs/tama-wig-002.JPG",
       "description": "Peluca Kanekalon",
       "long": "70",
-      "ears": "Malla tipo encaje",
+      "mesh": "Malla tipo encaje",
       "price": "35000"
     },
     {
@@ -21,7 +21,7 @@
       "img": "images/wigs/tama-wig-003.jpeg",
       "description": "Peluca Toyokalon",
       "long": "60",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "35000"
     },
     {
@@ -29,7 +29,15 @@
       "img": "images/wigs/tama-wig-004.JPG",
       "description": "Peluca Kanekalon",
       "long": "80",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
+      "price": "35000"
+    },
+    {
+      "id": "tama-wig-011",
+      "img": "images/wigs/tama-wig-011.jpeg",
+      "description": "Peluca Kanekalon con malla tipo encaje",
+      "long": "120",
+      "mesh": "Malla normal",
       "price": "35000"
     },
     {
@@ -37,7 +45,7 @@
       "img": "images/wigs/tama-wig-013.jpeg",
       "description": "Peluca Toyokalon",
       "long": "80",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "30000"
     },
     {
@@ -45,7 +53,7 @@
       "img": "images/wigs/tama-wig-014.jpeg",
       "description": "Peluca Kanekalon con malla tipo encaje",
       "long": "80",
-      "ears": "Orejas removibles",
+      "mesh": "Orejas removibles",
       "price": "35000"
     },
     {
@@ -53,7 +61,7 @@
       "img": "images/wigs/tama-wig-022.jpeg",
       "description": "Peluca Toyokalon",
       "long": "80",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "25000"
     },
     {
@@ -61,7 +69,7 @@
       "img": "images/wigs/tama-wig-025.jpeg",
       "description": "Peluca Toyokalon",
       "long": "80",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "30000"
     },
     {
@@ -69,7 +77,7 @@
       "img": "images/wigs/tama-wig-026.jpeg",
       "description": "Peluca Kanekalon",
       "long": "120",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "35000"
     },
     {
@@ -77,7 +85,7 @@
       "img": "images/wigs/tama-wig-028.jpeg",
       "description": "Peluca Toyokalon",
       "long": "100",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "35000"
     },
     {
@@ -85,7 +93,7 @@
       "img": "images/wigs/tama-wig-033.jpeg",
       "description": "Peluca Toyokalon",
       "long": "100",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "30000"
     },
     {
@@ -93,7 +101,7 @@
       "img": "images/wigs/tama-wig-035.jpeg",
       "description": "Peluca Kanekalon",
       "long": "100",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "35000"
     },
     {
@@ -101,7 +109,7 @@
       "img": "images/wigs/tama-wig-037.png",
       "description": "Peluca Toyokalon",
       "long": "100",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "25000"
     },
     {
@@ -109,7 +117,7 @@
       "img": "images/wigs/tama-wig-039.jpeg",
       "description": "Peluca Kanekalon",
       "long": "80",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "25000"
     },
     {
@@ -117,7 +125,7 @@
       "img": "images/wigs/tama-wig-041.jpeg",
       "description": "Peluca Kanekalon",
       "long": "100",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "35000"
     },
     {
@@ -125,7 +133,7 @@
       "img": "images/wigs/tama-wig-044.jpeg",
       "description": "Peluca Toyokalon",
       "long": "80",
-      "ears": "Malla normal",
+      "mesh": "Malla normal",
       "price": "30000"
     },
     {
@@ -133,7 +141,7 @@
       "img": "images/wigs/tama-wig-045A.jpeg",
       "description": "Peluca Toyokalon con malla normal",
       "long": "80",
-      "ears": "Coletas removibles",
+      "mesh": "Coletas removibles",
       "price": "35000"
     },
     {
@@ -141,7 +149,7 @@
       "img": "images/wigs/tama-wig-049.jpeg",
       "description": "Peluca Kanekalon",
       "long": "30",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "25000"
     },
     {
@@ -149,7 +157,7 @@
       "img": "images/wigs/tama-wig-050.jpeg",
       "description": "Peluca Kanekalon",
       "long": "50",
-      "ears": "Malla encaje",
+      "mesh": "Malla encaje",
       "price": "25000"
     }
   ]

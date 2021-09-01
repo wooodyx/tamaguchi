@@ -28,6 +28,4 @@ export class TamaHomeComponent extends TamaComponentBaseClass {
        '../../../assets/images/tutorials/use-5.jpg'
     ],
   }
-
-
 }

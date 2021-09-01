@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -20,6 +21,7 @@ import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
 import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
 import { TamaCatalogComponent } from './pages/catalog/catalog.component';
+
 
 const COMPONENTS = [
   AppComponent,
@@ -52,6 +54,7 @@ const MODAL = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   bootstrap: [
     AppComponent

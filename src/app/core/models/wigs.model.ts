@@ -3,7 +3,7 @@ export interface WigModel {
   img: string,
   description: string,
   long: string,
-  ears: string,
+  mesh: string,
   price: string,
   encodeUri?: string;
 }

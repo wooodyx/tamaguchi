@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { TamaWigService } from 'src/app/services/wig.service';
 import { TamaComponentBaseClass } from '../../class/component-base.class';

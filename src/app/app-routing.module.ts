@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 // components
 import { TamaHomeComponent } from './pages/home/home.component';
@@ -9,7 +10,7 @@ import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-met
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: TamaHomeComponent
   },
   {
@@ -26,12 +27,18 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'home',
+    redirectTo: '',
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers:[
+    { 
+      provide: LocationStrategy, 
+      useClass: HashLocationStrategy 
+    }
+  ]
 })
 export class AppRoutingModule { }

@@ -28,8 +28,8 @@ export class TamaWigCatalogComponent extends TamaComponentBaseClass {
     this.wigService.getWigsDataAsObservable()
       .pipe(takeUntil(this.$destroyed))
       .subscribe((wigs) => {
-        if (wigs) {
-          this.end = this.carousel ? 10 : wigs.length - 1;
+        if (wigs) {     
+          this.end = this.carousel ? 8 : wigs.length - 1;
           this.wigs = wigs;
         }
       })

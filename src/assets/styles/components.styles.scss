@@ -1,0 +1,24 @@
+.tama-divisor {
+    width: 95%;
+    height: 5px;
+    margin: 30px auto;
+}
+
+.tama-btn-link {
+    background: var(--tama-background-2);
+    text-decoration: none;
+    color: var(--tama-background);
+    padding: 10px 20px;
+    border-radius: 0px 0px 9px 9px;
+    display: block;
+    text-align: center;
+    font-family: "Odin-Rounded";
+    transition: .5s;
+
+    &:hover {
+        font-size: 40px;
+        transition: .5s;
+        background: var(--tama-secundary-color);
+        color: var(--tama-background-2);
+    }
+}

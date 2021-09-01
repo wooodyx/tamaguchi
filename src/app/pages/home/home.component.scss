@@ -1,32 +1,24 @@
 .tama-banner {
+  text-align: center;
   video {
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 510px;
+    object-fit: unset;
+    margin: auto;
+    border-radius: 30px;
   }
 }
 
-.tama-welcome,
 .tama-tutorial {
   width: 100%;
-  height: 400px;
+  height: 330px;
 }
 
-.tama-welcome {
-  text-align: center;
-  position: relative;
-  &-content {
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .tama-title-2 {
-      margin-bottom: 30px;
-    }
-    .tama-title-1 {
-      margin-top: 30px;
-    }
+.tama-catalog {
+  .tama-catalog-header {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

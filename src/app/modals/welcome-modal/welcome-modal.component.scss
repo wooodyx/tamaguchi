@@ -1,4 +1,4 @@
-.tama-wig-detail {
+.tama-welcome {
   position: relative;
   z-index: 2;
   &-background {
@@ -12,16 +12,23 @@
     height: 100%;
     opacity: 0.5;
   }
-  &-image {
-    border: 5px solid var(--tama-border);
-    background: var(--tama-background-2);
-    max-height: 90vh;
+
+  &-content {
+    width: 60%;
     position: fixed;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-radius: 5px;
-  }
+    background: white;
+    padding: 30px;
+    border: 1px solid #a67fc0;
+    border-radius: 20px;
 
+    .tama-title-2 {
+      margin-bottom: 30px;
+    }
+    .tama-title-1 {
+      margin-top: 30px;
+    }
+  }
 }

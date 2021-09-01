@@ -1,9 +1,9 @@
 <div class="tama-navbar">
   <img src="../../../assets/tamaguchi-logo.png" alt="logo">
 
-  <ng-container *ngFor="let item of route; index as i">
-    <div class="tama-navbar-item tama-font-1" [routerLink]="[item.path]" routerLinkActive="active">
+  <!-- <ng-container *ngFor="let item of route; index as i">
+    <div class="tama-navbar-item tama-font-1" [routerLink]="[item.path]" routerLinkActive="active" *ngIf="item.enabled">
       {{item.title}}
     </div>
-  </ng-container>
+  </ng-container> -->
 </div>

@@ -3,4 +3,16 @@
   gap: 40px;
   padding: 40px;
   flex-wrap: wrap;
+  justify-content: space-around;
+
+  tama-wig-element {
+    width: 22%;
+  }
 }
+
+.carousel {
+  tama-wig-element {
+    width: 23%;
+  }
+}
+

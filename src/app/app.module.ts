@@ -18,6 +18,7 @@ import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
 import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
 import { TamaCatalogComponent } from './pages/catalog/catalog.component';
+import { TamaWelcomeModalComponent } from './modals/welcome-modal/welcome-modal.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -35,10 +36,15 @@ const PAGES = [
   TamaCatalogComponent,
 ];
 
+const MODAL = [ 
+  TamaWelcomeModalComponent
+]
+
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    ...PAGES
+    ...PAGES,
+    ...MODAL
   ],
   imports: [
     BrowserModule,

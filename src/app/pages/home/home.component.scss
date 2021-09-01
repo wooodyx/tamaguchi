@@ -9,9 +9,16 @@
   }
 }
 
-.tama-tutorial {
-  width: 100%;
-  height: 330px;
+.tama-tutorials {
+  .tama-title-3{
+    margin-bottom: 20px;
+  }
+  &-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
 }
 
 .tama-catalog {
@@ -35,6 +42,12 @@
 
 
 @media (max-width: 992px) {
+  .tama-tutorials {
+    &-content{
+      flex-wrap: wrap;
+    }
+  }
+
   .tama-payment-methods {
     &-content {
       flex-wrap: wrap;

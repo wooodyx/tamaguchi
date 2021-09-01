@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { TamaWigService } from 'src/app/services/wig.service';
 import { TamaComponentBaseClass } from '../../class/component-base.class';
-import { WigModel } from '../../models/wigs.model';
+import { WigModel } from '../../core/models/wigs.model';
 
 @Component({
   selector: 'tama-wig-element',

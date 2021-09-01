@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { takeUntil } from 'rxjs/operators';
-import { WigModel } from '../../models/wigs.model';
+import { WigModel } from '../../core/models/wigs.model';
 import { TamaComponentBaseClass } from '../../class/component-base.class';
 import { TamaWigService } from '../../services/wig.service';
 

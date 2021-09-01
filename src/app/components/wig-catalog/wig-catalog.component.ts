@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { takeUntil } from 'rxjs/operators';
 import { TamaComponentBaseClass } from '../../class/component-base.class';
-import { WigModel } from '../../models/wigs.model';
+import { WigModel } from '../../core/models/wigs.model';
 import { TamaWigService } from '../../services/wig.service';
 
 @Component({

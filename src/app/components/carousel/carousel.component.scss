@@ -1,0 +1,43 @@
+:host{
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    img{
+        width: 300px;
+    }
+    
+    &:hover {
+        .carousel-btn-left,
+        .carousel-btn-right{
+            display: block;
+        } 
+    }
+}
+
+.carousel-btn-left,
+.carousel-btn-right{
+    display: none;
+} 
+
+.carousel-btn-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 300px;
+    background: var(--tama-secundary-color);
+    opacity: 0;
+}
+.carousel-btn-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 300px;
+    background: var(--tama-secundary-color);
+    opacity: 0;
+}
+
+@media (max-width: 992px) {
+}

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { takeUntil } from 'rxjs/operators';
-import { TamaComponentBaseClass } from '../../class/component-base.class';
+import { TamaComponentBaseClass } from '../../../class/component-base.class';
 
 @Component({
   selector: 'tama-welcome-modal',

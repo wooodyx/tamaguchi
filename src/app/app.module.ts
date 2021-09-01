@@ -11,6 +11,8 @@ import { TamaFooterComponent } from './components/footer/footer.component';
 import { TamaWigDetailComponent } from './components/wig-detail/wig-detail.component';
 import { TamaWigElementComponent } from './components/wig-element/wig-element.component';
 import { TamaWigCatalogComponent } from './components/wig-catalog/wig-catalog.component';
+import { TamaWelcomeModalComponent } from './components/modals/welcome-modal/welcome-modal.component';
+import { TamaCarouselComponent } from './components/carousel/carousel.component';
 
 // PAGES
 
@@ -18,7 +20,6 @@ import { TamaHomeComponent } from './pages/home/home.component';
 import { TamaContactMeComponent } from './pages/contact-me/contact-me.component';
 import { TamaPaymentMethodsComponent } from './pages/payment-methods/payment-methods.component';
 import { TamaCatalogComponent } from './pages/catalog/catalog.component';
-import { TamaWelcomeModalComponent } from './modals/welcome-modal/welcome-modal.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -26,7 +27,8 @@ const COMPONENTS = [
   TamaFooterComponent,
   TamaWigDetailComponent,
   TamaWigElementComponent,
-  TamaWigCatalogComponent
+  TamaWigCatalogComponent,
+  TamaCarouselComponent
 ];
 
 const PAGES = [

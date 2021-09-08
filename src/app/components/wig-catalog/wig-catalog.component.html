@@ -1,6 +1,6 @@
 <input *ngIf="admin" type="text" placeholder="buscador" [(ngModel)]="searchValue" (input)="search()">
 <div class="tama-wig-catalog" [class.carousel]="carousel">
   <ng-container *ngFor="let wig of wigs | slice:0:end">
-    <tama-wig-element [wig]="wig"></tama-wig-element>
+      <tama-wig-element *ngIf="wig.img" [wig]="wig"></tama-wig-element>
   </ng-container>
 </div>

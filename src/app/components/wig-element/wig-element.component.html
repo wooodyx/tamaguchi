@@ -1,28 +1,31 @@
 <div class="tama-wig-element">
-  <img class="tama-wig-element-img" src="../../../assets/{{wig.img}}" onerror="this.src='../../../assets/images/logo/not-found.png';" alt="Wig" (click)="openDetail()">
-  <div class="tama-title-1">
-    {{ wig.id  }}
-  </div>
-  <div class="tama-wig-element-body">
-    <div class="tama-wig-element-body-item">
-      <img src="../../../assets/images/icons/wig.png" alt="wig.id">
-      <span>{{ wig.description }}</span>
+  <img class="tama-wig-element-img" src="../../../assets/{{wig.img}}"
+    onerror="this.src='../../../assets/images/logo/not-found.png';" alt="Wig" (click)="openDetail()">
+  <ng-container>
+    <div class="tama-title-1">
+      {{ wig.id }}
     </div>
-    <div class="tama-wig-element-body-item">
-      <img src="../../../assets/images/icons/ear.png" alt="wig.id">
-      <span> {{ wig.mesh }}</span>
+    <div class="tama-wig-element-body">
+      <div class="tama-wig-element-body-item">
+        <img src="../../../assets/images/icons/wig.png" alt="wig.id">
+        <span>{{ wig.description }}</span>
+      </div>
+      <div class="tama-wig-element-body-item">
+        <img src="../../../assets/images/icons/ear.png" alt="wig.id">
+        <span> {{ wig.mesh }}</span>
+      </div>
+      <div class="tama-wig-element-body-item">
+        <img src="../../../assets/images/icons/long.png" alt="wig.id">
+        <span>{{ wig.long }} cm</span>
+      </div>
+      <div class="tama-wig-element-body-item">
+        <img src="../../../assets/images/icons/price.png" alt="wig.id">
+        <span> {{ wig.price | currency }} </span>
+      </div>
     </div>
-    <div class="tama-wig-element-body-item">
-      <img src="../../../assets/images/icons/long.png" alt="wig.id">
-      <span>{{ wig.long }} cm</span>
+    <div class="tama-wig-element-footer">
+      <a class="tama-btn-link" target="__blank"
+        href="https://wa.me/+573192758557?text=Hola!! quisiera ver más sobre {{wig.id}}"> La necesito!</a>
     </div>
-    <div class="tama-wig-element-body-item">
-      <img src="../../../assets/images/icons/price.png" alt="wig.id">
-      <span> {{ wig.price | currency }} </span>
-    </div>
-  </div>
-  <div class="tama-wig-element-footer">
-    <a class="tama-btn-link" target="__blank"
-      href="https://wa.me/+573192758557?text=Hola!! quisiera ver más sobre {{wig.id}}"> La necesito!</a>
-  </div>
+  </ng-container>
 </div>
